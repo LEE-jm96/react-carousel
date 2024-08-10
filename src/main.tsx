@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Cat from "./pages/Cat";
+import Dog from "./pages/Dog";
 
 import "./main.css";
 
@@ -13,8 +13,8 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/cat",
-    element: <Cat />,
+    path: "/dog",
+    element: <Dog />,
   },
 ]);
 

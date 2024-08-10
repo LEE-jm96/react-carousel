@@ -1,7 +1,7 @@
 import { httpClient } from "./httpClient";
 
-export const getCarList = async () => {
-  const apiUrl = `cat`;
+export const getDogRandomImg = async () => {
+  const apiUrl = "/dog";
   const { data } = await httpClient.get(apiUrl);
 
   return data;
