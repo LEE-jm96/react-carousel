@@ -3,7 +3,7 @@ import { AxiosError } from "axios";
 
 import type { dog } from "../types/dog";
 
-const DOGDATA = [
+const DOG_TEMP_DATA = [
   {
     tags: ["활발함", "귀여움"],
     name: "초코",
@@ -44,9 +44,8 @@ export function useDogList() {
       try {
         setIsLoading(true);
         //const dogListData = await getDogRandomImg();
-
+        setData(DOG_TEMP_DATA);
         setIsLoading(false);
-        setData(DOGDATA);
       } catch (error) {
         if (error instanceof AxiosError) {
           setIsError(error);

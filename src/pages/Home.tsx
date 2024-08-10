@@ -7,6 +7,7 @@ const Home = () => {
   const onClickBtn = () => {
     navigate("dog");
   };
+
   return (
     <button type="button" onClick={onClickBtn}>
       강아지 보러 가기
