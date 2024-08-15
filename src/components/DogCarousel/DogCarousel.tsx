@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -36,7 +36,7 @@ const DogCarousel = ({ dogList }: DogListProps) => {
   return (
     <div className="carousel">
       <Slider {...settings}>
-        {dogList.map((dog, idx) => {
+        {dogList.map((dog) => {
           return (
             <div key={dog.dogId} className="card">
               <DogItem dog={dog} onClickBtn={onClickBtn} />

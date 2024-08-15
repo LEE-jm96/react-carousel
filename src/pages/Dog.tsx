@@ -1,5 +1,3 @@
-import React from "react";
-
 import Loading from "../components/Loadng/Loading";
 import DogCarousel from "../components/DogCarousel/DogCarousel";
 

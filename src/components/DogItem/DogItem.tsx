@@ -1,5 +1,3 @@
-import React from "react";
-
 import { dog } from "../../types/dog";
 import ImageContainer from "./DogItem.styled";
 
