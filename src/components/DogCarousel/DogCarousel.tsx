@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import DogItem from "../DogItem/DogItem";
-import DogToast from "../Toast/DogToast";
+import DogToast from "../DogToast/DogToast";
 
 import { dog } from "../../types/dog";
 
