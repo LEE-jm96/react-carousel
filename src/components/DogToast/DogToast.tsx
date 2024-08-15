@@ -5,12 +5,12 @@ import { Toast } from "react-bootstrap";
 import ToastContainer from "./DogToast.styled";
 import { dog } from "../../types/dog";
 
-type DogToastTypes = {
+type DogToastPropsTypes = {
   selectedDog: dog | undefined;
   closeToast: () => void;
 };
 
-const DogToast = ({ selectedDog, closeToast }: DogToastTypes) => {
+const DogToast = ({ selectedDog, closeToast }: DogToastPropsTypes) => {
   return (
     <ToastContainer>
       <Toast onClick={closeToast}>

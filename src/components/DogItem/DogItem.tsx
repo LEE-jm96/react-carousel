@@ -1,12 +1,12 @@
 import { dog } from "../../types/dog";
 import ImageContainer from "./DogItem.styled";
 
-type DogItemProps = {
+type DogItemPropsTypes = {
   dog: dog;
   onClickBtn: (dog: dog) => void;
 };
 
-const DogItem = ({ dog, onClickBtn }: DogItemProps) => {
+const DogItem = ({ dog, onClickBtn }: DogItemPropsTypes) => {
   return (
     <div key={dog.dogId} className="card border-secondary">
       <ImageContainer

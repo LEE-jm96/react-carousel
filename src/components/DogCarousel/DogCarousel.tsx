@@ -9,11 +9,11 @@ import DogToast from "../DogToast/DogToast";
 
 import { dog } from "../../types/dog";
 
-type DogListProps = {
+type DogListPropsTypes = {
   dogList: dog[];
 };
 
-const DogCarousel = ({ dogList }: DogListProps) => {
+const DogCarousel = ({ dogList }: DogListPropsTypes) => {
   const [selectedDog, setSelectedDog] = useState<dog>();
   const [isOpenToast, setIsOpenToast] = useState(false);
 
