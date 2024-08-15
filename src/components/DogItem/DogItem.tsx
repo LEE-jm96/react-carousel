@@ -10,7 +10,7 @@ type DogItemProps = {
 
 const DogItem = ({ dog, onClickBtn }: DogItemProps) => {
   return (
-    <div key={dog.dogId} className="card border-secondary mb-3">
+    <div key={dog.dogId} className="card border-secondary">
       <ImageContainer
         src={dog.imgSrc}
         alt="thumbnail"
