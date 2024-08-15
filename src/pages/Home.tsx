@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
+import ButtonContainer from "./Home.styled";
+
 const Home = () => {
   const navigate = useNavigate();
 
@@ -9,9 +11,9 @@ const Home = () => {
   };
 
   return (
-    <button type="button" onClick={onClickBtn}>
+    <ButtonContainer type="button" onClick={onClickBtn}>
       강아지 보러 가기
-    </button>
+    </ButtonContainer>
   );
 };
 

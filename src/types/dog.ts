@@ -4,4 +4,5 @@ export type dog = {
   size: number;
   imgSrc: string;
   dogId: number;
+  message: string;
 };

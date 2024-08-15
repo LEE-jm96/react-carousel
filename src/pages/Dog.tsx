@@ -10,8 +10,8 @@ const Dog = () => {
 
   return (
     <>
-      {isLoading && <Loading />}
       <DogCarousel dogList={dogList} />
+      {isLoading && <Loading />}
     </>
   );
 };

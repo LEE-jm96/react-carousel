@@ -1,6 +1,27 @@
 #root {
   max-width: 420px;
   margin: 0 auto;
-  padding: 2rem;
+
+  padding: 3rem;
   text-align: center;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px gold;
+  transform: translateY(+3px);
 }
