@@ -14,7 +14,7 @@ type DogListPropsTypes = {
 };
 
 const DogCarousel = ({ dogList }: DogListPropsTypes) => {
-  const [selectedDog, setSelectedDog] = useState<dog>();
+  const [selectedDog, setSelectedDog] = useState<dog>(dogList[0]);
   const [isOpenToast, setIsOpenToast] = useState(false);
 
   const settings = {

@@ -5,4 +5,5 @@ export type dog = {
   imgSrc: string;
   dogId: number;
   message: string;
+  minute: number;
 };

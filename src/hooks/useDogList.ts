@@ -11,6 +11,7 @@ const DOG_TEMP_DATA = [
     imgSrc: "../../public/dog1.jpg",
     dogId: 2,
     message: "안녕 나는 단추야 잘 부탁해",
+    minute: 1,
   },
   {
     tags: ["활발함", "귀여움"],
@@ -19,6 +20,7 @@ const DOG_TEMP_DATA = [
     imgSrc: "../../public/dog2.jpg",
     dogId: 3,
     message: "안녕 나는 초코야 잘 부탁해",
+    minute: 5,
   },
   {
     tags: ["얌전함", "애교 있음"],
@@ -27,6 +29,7 @@ const DOG_TEMP_DATA = [
     imgSrc: "../../public/dog3.jpg",
     dogId: 7,
     message: "안녕 나는 토토야 잘 부탁해",
+    minute: 8,
   },
 ];
 
