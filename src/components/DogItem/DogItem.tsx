@@ -1,5 +1,5 @@
 import { dog } from "../../types/dog";
-import ImageContainer from "./DogItem.styled";
+import { ImageContainer, SpanContainer } from "./DogItem.styled";
 
 type DogItemPropsTypes = {
   dog: dog;
@@ -22,12 +22,12 @@ const DogItem = ({ dog, onClickBtn }: DogItemPropsTypes) => {
         </div>
         <button
           type="button"
-          className="btn btn-primary"
+          className="btn btn-info"
           onClick={() => {
             onClickBtn(dog);
           }}
         >
-          {dog.name}의 전달하고 싶은 말은?
+          <SpanContainer>{dog.name}의 전달하고 싶은 말은?</SpanContainer>
         </button>
       </div>
     </div>

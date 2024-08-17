@@ -4,4 +4,8 @@ const ImageContainer = styled.img`
   height: 400px;
 `;
 
-export default ImageContainer;
+const SpanContainer = styled.span`
+  color: white;
+`;
+
+export { ImageContainer, SpanContainer };

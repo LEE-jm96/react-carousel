@@ -20,8 +20,10 @@ const DogCarousel = ({ dogList }: DogListPropsTypes) => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 400,
-    arrows: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
   };
 
   const onClickBtn = (dog: dog): void => {

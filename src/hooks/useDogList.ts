@@ -35,6 +35,7 @@ const DOG_TEMP_DATA = [
 
 export function useDogList() {
   const [data, setData] = useState<dog[]>([]);
+  const [searchData, setSearchData] = useState<dog[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState<Error>();
 
@@ -44,6 +45,7 @@ export function useDogList() {
         setIsLoading(true);
         //const dogListData = await getDogRandomImg();
         setData(DOG_TEMP_DATA);
+        setSearchData(DOG_TEMP_DATA);
         setIsLoading(false);
       } catch (error) {
         if (error instanceof AxiosError) {
@@ -57,6 +59,8 @@ export function useDogList() {
 
   return {
     data,
+    searchData,
+    setSearchData,
     isLoading,
     isError,
   };
